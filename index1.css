@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  /* height: 500px; */
+  /* align-items: center; */
+  /* flex-direction: row; */
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.container div {
+  background-color: rgb(131, 137, 151);
+  padding: 1.6rem;
+  border: 1px solid white;
+  box-sizing: border-box;
+  width: calc(1 / 2 * 100%- (2 / 3) * 30px);
+
+  /* margin-right: 50px; */
+  color: white;
+}
+.container div p {
+  margin-top: 15px;
+}
+.item-1 {
+  /* order: 3; */
+}
+.item-2 {
+  /* order: 2; */
+}
+.item-3 {
+  /* order: 1; */
+}
+@media (max-width: 1024px) {
+  .container div {
+    width: calc(1 / (2 * 100%)- (2 / 3) * 30px);
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column;
+  }
+}

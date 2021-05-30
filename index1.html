@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        width: 100%;
+        height: 200px;
+        background-color: turquoise;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .container .box1 {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        order: 3;
+      }
+      .container .box2 {
+        min-width: 100px;
+        min-height: 100px;
+        background-color: yellow;
+        align-self: stretch;
+        order: 1;
+      }
+      .container .box3 {
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        order: 2;
+      }
+      .container .box4 {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        order: 4;
+      }
+      .container-grid {
+        display: grid;
+        background-color: aqua;
+        width: 100%;
+        height: 50%;
+        grid-gap: 10px;
+        grid-template-columns: auto auto auto;
+      }
+      .container-grid .grid-items {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background-color: bisque;
+      }
+      .container-grid .grid-items-1 {
+        width: 100px;
+        height: 100px;
+        border: 2px solid black;
+        background-color: bisque;
+      }
+      @media only screen and (max-width: 800px) {
+        .container-grid {
+          background-color: whitesmoke;
+        }
+      }
+      .Box-css {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: yellowgreen;
+        border-radius: 10px;
+        transition: width 5s ease, transform 5s;
+      }
+      .Box-css:hover {
+        width: 150px;
+        background-color: blue;
+        transform: scale(50px, 50px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box4"></div>
+      <div class="box4"></div>
+      <div class="box4"></div>
+      <div class="box4"></div>
+      <div class="box4"></div>
+    </div>
+    <div class="container-grid">
+      <div class="grid-items-1">one</div>
+      <div class="grid-items">two</div>
+
+      <div class="grid-items">three</div>
+      <div class="grid-items">four</div>
+      <div class="grid-items">five</div>
+      <div class="grid-items">six</div>
+      <div class="grid-items">seven</div>
+      <div class="grid-items">eight</div>
+      <div class="grid-items">nine</div>
+    </div>
+    <div class="Box-css">CSS</div>
+  </body>
+</html>
