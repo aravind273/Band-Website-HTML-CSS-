@@ -1,3 +1,4 @@
+<!-- Hello this is aravind  -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,7 +26,6 @@
                     <option value="1">Merchandise</option>
                     <option value="2">Merchandise</option>
                     <option value="3">Merchandise</option>
-
                 </select>
             </ul>
             <button class="about">ABOUT</button>
@@ -91,7 +91,7 @@
                     <hr>
                 </div>
                 <div class="card-items">
-                    <div class="card-item">
+                    <div class="card-item-places">
                         <img src="newyork.jpg">
                         <div class="card-content">
                             <p style="margin-top: 0; font-weight: 600;">New York</p>
@@ -101,7 +101,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item-places">
                         <img src="paris.jpg">
                         <div class="card-content">
                             <p style="margin-top: 0; font-weight: 600">Pairs</p>
@@ -110,7 +110,7 @@
                             <div class="button">Buy Tickets</div>
                         </div>
                     </div>
-                    <div class="card-item">
+                    <div class="card-item-places">
                         <img src="sanfran.jpg">
                         <div class="card-content">
                             <p style="margin-top: 0; font-weight: 600">San Francisco</p>
@@ -132,23 +132,33 @@
             <div class="contactus-child">
                 <div class=contactus-child1">
                     <div class="contactus-child12">
-                        <img src="paris.jpg" style="width: 20px; height: 20px;">
-                        <p style="font-size:20px; margin: 0px; margin-left: 20px;"> Chicago, US</p>
+                        <div class="contactus-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p> Chicago, US</p>
+                        </div>
                     </div>
                     <div class="contactus-child12">
-                        <img src="paris.jpg" style="width: 20px; height: 20px;">
-                        <p style="font-size:20px;margin: 0px; margin-left: 20px;">Phone: +00 151515</p>
+                        <div class="contactus-item">
+                            <i class="fas fa-mobile"></i>
+                            <p>Phone: +00 151515</p>
+                        </div>
+
                     </div>
                     <div class="contactus-child12">
-                        <img src="paris.jpg" style="width: 20px; height: 20px;">
-                        <p style="font-size:20px; margin:0px; margin-left: 20px;">Email: mail@mail.com</p>
+                        <div class="contactus-item">
+                            <i class="fas fa-envelope-square"></i>
+                            <p>Email: mail@mail.com</p>
+                        </div>
+
                     </div>
 
                 </div>
                 <div class="contactus-child2">
                     <div class="contactus-child21">
                         <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" style="margin-left: 5px;" placeholder="Email">
+                        <div style="display:inline-block">
+                            <input type="text" style="padding: 0.66rem;" class="input-field-Email" placeholder="Email">
+                        </div>
 
                     </div>
                     <div class="contactus-child22">
@@ -162,8 +172,8 @@
                 </div>
             </div>
         </div>
-        <div style="margin-top: 100px; width: 100vw;">
-            <img src="map.jpg">
+        <div style="margin-top: 100px;">
+            <img src="map.jpg" style="width: 100%;">
         </div>
     </main>
     <footer>
@@ -180,6 +190,7 @@
 
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/5610279181.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
